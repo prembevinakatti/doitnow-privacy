@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - DoItNow</title>
+  <style>
+    :root {
+      --bg: #F5F5F0;
+      --card-bg: #FFFFFF;
+      --text: #121212;
+      --text-muted: #555555;
+      --accent: #CCFF00;
+      --border: #121212;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 3px solid var(--border);
+      border-radius: 12px;
+      padding: 40px 32px;
+      box-shadow: 6px 6px 0px var(--border);
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      border: 2px solid var(--border);
+      border-radius: 4px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .last-updated {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 6px;
+    }
+    p, ul {
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .highlight-box {
+      background: #FAFAFA;
+      border-left: 4px solid var(--border);
+      padding: 14px 18px;
+      margin: 18px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 2px dashed #D0D0D0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    a {
+      color: var(--text);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">Privacy Policy</div>
+    <h1>DoItNow: Focus & Daily Tasks</h1>
+    <div class="last-updated">Effective Date: November 7, 2026</div>
+
+    <div class="highlight-box">
+      <strong>Core Principle:</strong> <strong>DoItNow</strong> is engineered as a 100% offline, local-first productivity tool. We do not operate user accounts, we run zero cloud databases, and we never collect, track, share, or sell your personal data.
+    </div>
+
+    <h2>1. Data Collection & Transmission</h2>
+    <p>DoItNow collects <strong>no personal data</strong>.</p>
+    <ul>
+      <li><strong>No Account Required:</strong> You do not need to register, log in, or provide an email address, phone number, or name to use DoItNow.</li>
+      <li><strong>Zero Remote Servers:</strong> We do not operate external web servers, analytics servers, or cloud backends. All task titles, descriptions, priorities, completion history, and streak metrics stay strictly on your device.</li>
+      <li><strong>No Third-Party Analytics or Trackers:</strong> We do not integrate third-party tracking SDKs (no Google Analytics, Firebase, Sentry, Facebook SDK, or advertising networks).</li>
+    </ul>
+
+    <h2>2. Local On-Device Storage</h2>
+    <p>All application state is saved locally on your device using native on-device storage (AsyncStorage):</p>
+    <ul>
+      <li><strong>Task Data:</strong> Task titles, descriptions, priority levels, tags, creation dates, and completion status.</li>
+      <li><strong>Streaks & Metrics:</strong> Aggregated daily completion counts used to render your productivity dashboard and streaks.</li>
+      <li><strong>Preferences:</strong> User choices such as custom reminder times, quiet hours, and haptic intensity.</li>
+    </ul>
+
+    <h2>3. Android Permissions Explained</h2>
+    <p>DoItNow requests only the minimal permissions required for on-device operation:</p>
+    <ul>
+      <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to deliver local daily reminders and motivational nudges that you have configured. Notifications are scheduled and generated locally on your device without push tokens or remote servers.</li>
+      <li><strong>Vibration (VIBRATE):</strong> Used strictly to provide tactile haptic feedback when completing tasks or pressing buttons.</li>
+      <li><strong>Run at Startup (RECEIVE_BOOT_COMPLETED):</strong> Used by the Android operating system to restore your pending local notification alarms if you reboot your device.</li>
+      <li><strong>Network Access (INTERNET):</strong> While Android frameworks provide network permissions by default, DoItNow does not establish any network connections. The external link to this Privacy Policy opens directly in your default browser.</li>
+    </ul>
+
+    <h2>4. Data Retention, Backup & Erasure</h2>
+    <p>Because your data is stored exclusively on your device, you maintain complete custody over it:</p>
+    <ul>
+      <li><strong>Manual Backup:</strong> You can export an unencrypted JSON backup of all your data directly within the app (Settings &rarr; Data Backup & Recovery).</li>
+      <li><strong>Complete Deletion:</strong> You can permanently erase all tasks, history, and preferences at any time using the "NUKE ALL DATA" feature in Settings &rarr; Danger Zone, or by clearing app data in your device's Android System Settings.</li>
+      <li><strong>Uninstalling:</strong> Deleting the application removes all locally stored data from your device unless you have enabled Android System Cloud Backups.</li>
+    </ul>
+
+    <h2>5. Children's Privacy</h2>
+    <p>DoItNow does not collect or solicit information from anyone, including children under the age of 13. The application is a general-purpose offline productivity app.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>If we update our privacy practices, we will post the revised policy at this URL with an updated effective date.</p>
+
+    <h2>7. Contact</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy or DoItNow, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:onkarbevinakatti09@gmail.com">onkarbevinakatti09@gmail.com</a></p>
+
+    <footer>
+      &copy; 2026 DoItNow. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
+
